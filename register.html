@@ -133,6 +133,7 @@
             grid-template-columns: 1fr 1fr;
             gap: clamp(2rem, 5vw, 4rem);
             align-items: center;
+            grid-auto-flow: dense;
         }
 
         /* Left Side - Value Proposition */
@@ -660,6 +661,11 @@
 
             .value-section {
                 text-align: center;
+                order: 2;
+            }
+
+            .form-section {
+                order: 1;
             }
 
             .value-section p {
